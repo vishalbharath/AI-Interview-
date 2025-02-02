@@ -1,0 +1,67 @@
+#field4-section {
+
+  display: flex;
+  flex-direction: column; /* Default to column for smaller screens */
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Pure white background */
+  padding: 2.5rem; /* Consistent padding */
+  border-radius: 0.5rem; /* Rounded corners */
+  border: none; /* Remove border for seamless look */
+  box-shadow: none; /* Remove shadow for a flat appearance */
+}
+
+#field4-section .text-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width for text section */
+  text-align: left; /* Left align text */
+  color: #8a8a8a; /* Initial text color */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+@media (min-width: 768px) {
+  #field4-section {
+    flex-direction: row; /* Change direction to row for larger screens */
+    justify-content: space-between; /* Space between text and image */
+  }
+
+  #field4-section .text-section {
+    width: 60%; /* Text takes up 60% of the container */
+  }
+
+  #field4-section .image {
+    width: 35%; /* Image takes up 35% of the container */
+    margin-right: 2rem; /* Space between text and image */
+  }
+}
+
+#field4-section .heading {
+  font-size: 2rem; /* Increased font size */
+  font-weight: 700; /* Bold weight */
+  color: #1E3A8A; /* Primary color */
+  margin-bottom: 1rem; /* Space below the heading */
+  text-shadow: none; /* Remove text shadow for a cleaner look */
+}
+
+#field4-section .paragraph {
+  margin-top: 0.5rem; /* Space above paragraphs */
+  color: #374151; /* Paragraph color */
+  font-size: 1.3rem; /* Increased font size */
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+#field4-section .image {
+  height: auto; /* Remove fixed height */
+  max-width: 100%; /* Ensure the image does not exceed container width */
+  max-height: 20rem; /* Set a maximum height */
+  width: auto; /* Remove fixed width */
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 0.25rem; /* Rounded corners for the image */
+  transition: none; /* Remove scaling transition for seamless integration */
+}
+
+/* Optional: Remove hover effect from the image */
+#field4-section .image:hover {
+  transform: none; /* Remove scale effect on hover */
+}

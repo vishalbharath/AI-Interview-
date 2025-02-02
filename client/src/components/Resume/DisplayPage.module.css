@@ -1,0 +1,178 @@
+
+  
+  .displayPageContainer {
+    max-width: 800px;
+    /* display: none; */
+    margin: 0 auto;
+    padding: 2rem;
+    /* background-color: #ffffff; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-color: orange;
+  }
+  
+  /* Headers */
+  .displayPageHeader {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .displayPageSubHeader {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Form Sections */
+  .formSection {
+    margin-bottom: 2rem;
+  }
+  
+  /* Inputs and Textareas */
+  .displayPageInput,
+  .displayPageTextarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgb(180, 182, 182);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    color: #060607;
+    border-color: orange;
+
+  }
+  
+  .displayPageInput:focus,
+  .displayPageTextarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  .displayPageTextarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Paragraphs */
+  .displayPageParagraph {
+    margin-bottom: 1rem;
+  }
+  
+  .displayPageParagraph strong {
+    display: inline-block;
+    width: 150px;
+    color: #060607;
+  }
+  
+  /* Buttons */
+  .displayPageButton,
+  .removeButton {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+    align-content: center;
+  }
+  .displayNextButton
+  {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+    align-content: center;
+  }
+  .displayPageButton:hover,
+  .removeButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .removeButton {
+    background-color: #e74c3c;
+  }
+  
+  .removeButton:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Dynamic Sections */
+  .dynamicSection {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Add Sections */
+  .addEducationSection,
+  .addProjectSection,
+  .addExperienceSection,
+  .addAchievementSection,
+  .addCertificationSection {
+    background-color: #ecf0f1;
+    border: 1px dashed #bdc3c7;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Lists */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+   
+    border-radius: 4px;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .displayPageContainer {
+      padding: 1rem;
+    }
+  
+    .displayPageHeader {
+      font-size: 2rem;
+    }
+  
+    .displayPageSubHeader {
+      font-size: 1.5rem;
+    }
+  
+    .displayPageParagraph strong {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+.buttonSection{
+  display: flex;
+  justify-content: center;
+}

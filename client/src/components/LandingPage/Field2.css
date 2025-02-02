@@ -1,0 +1,64 @@
+/* Field2 Section */
+#field2-section {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: #ffffff; /* Pure white background */
+  padding: 1.5rem; /* Consistent padding */
+}
+
+#field2-section .text-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%; /* Text takes up 60% of the container */
+  text-align: left; /* Left align text */
+  color: #8a8a8a; /* Initial text color */
+}
+
+#field2-section .field2-image {
+  width: 25%; /* Image takes up 25% of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0.25rem; /* Rounded corners for the image */
+  object-fit: cover; /* Cover the entire area */
+  margin-right: 2rem; /* Space between image and text */
+}
+
+@media (max-width: 768px) {
+  #field2-section {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  #field2-section .field2-image {
+    margin: 1rem 0; /* Add some space around the image */
+    width: 80%; /* Responsive width for mobile */
+  }
+
+  #field2-section .text-section {
+    width: 100%; /* Full width for text on mobile */
+  }
+}
+
+#field2-section .heading {
+  font-size: 2.2rem; /* Increased font size */
+  font-weight: 700; /* Bold weight */
+  color: #1E3A8A; /* Primary color */
+  margin-bottom: 1rem; /* Space below the heading */
+  text-shadow: 1px 1px 2px #ffffff; /* Subtle text shadow */
+}
+
+#field2-section .paragraph {
+  margin-top: 0.5rem; /* Space above paragraphs */
+  color: #374151; /* Paragraph color */
+  font-size: 1.4rem; /* Increased font size */
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+.field2-image, .heading, .paragraph {
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out; /* Smooth transitions */
+  will-change: transform, opacity; /* Optimize for animations */
+}
+
+html {
+  scroll-behavior: smooth;
+}
